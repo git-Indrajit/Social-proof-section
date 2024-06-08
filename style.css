@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 0.938rem;
+}
+
+section{
+    background-image: url(bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.row{
+    max-width: 80%;
+    margin: 0 auto 5rem auto; 
+}
+
+.top-layer{
+    position: relative;
+    top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.main-text{
+    flex-basis: 50%;
+}
+
+.main-text h1{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 3.125rem;
+}
+
+.main-text p{
+    color: hsl(303, 10%, 53%);
+    line-height: 150%;
+    margin-top: 1rem;
+}
+
+.rating{
+    background-color: hsl(300, 24%, 96%);
+    padding: 1.25rem;
+    display: flex;
+    border-radius: .625rem;
+    margin-bottom: .625rem;
+    position: relative;
+}
+
+.rating-1{
+    right: 5.625rem;
+    
+}
+
+.rating-2{
+    right: 3.125rem;
+    
+}
+
+.rating-3{
+    right: 0;
+    
+}
+
+.rating p{
+    margin-left: 0.938rem;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+
+.bottom-layer{
+    display: flex;
+    position: relative;
+    top: 3.125rem;
+    bottom: 3.125rem;
+}
+
+.card{
+    background-color: hsl(300, 43%, 22%);
+    width: 21.875rem;
+    border-radius: .625rem;
+    padding: 1.25rem;
+    margin-top: 3.125rem;
+    position: relative;
+}
+
+.card-2{
+    top: 0.938rem;
+    margin-left: 0.938rem;
+    margin-right: 0.938rem;
+}
+
+.card-3{
+    top: 1.875rem;
+}
+
+.card-info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    
+}
+
+.card-info .info{
+    margin-left: 1.25rem;
+    line-height: 120%;
+}
+
+.card-info .info h2{
+    color: hsl(0, 0%, 100%);
+}
+
+.card-info .info p{
+    color: hsl(333, 80%, 67%);
+}
+.card q{
+    color: hsl(0, 0%, 100%);
+}
+.card q p{
+    
+    display: inline;
+}
+.card img{
+    border-radius: 50%;
+    width: 3.125rem;
+}
+
+.card .card-content{
+    margin-bottom: 1.25rem;
+}
+
+@media screen and (max-width:48rem) {
+    section{
+        background-image: url(bg-pattern-top-mobile.svg);
+    }
+    .top-layer{
+        flex-direction:column ;
+    }
+
+    .main-text{
+        text-align: center;
+    }
+    
+    .main-text h1{
+        font-size: 1.875rem;
+    }
+
+    .main-text p{
+        font-size: 0.813rem;
+        padding: 1.25rem 0;
+    }
+
+    .rating{
+        position: relative;
+        right: 0;
+        flex-direction: column;
+    }
+
+    .rating .img-star{
+        margin-bottom: .625rem;
+    }
+
+    .bottom-layer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 100%;
+        margin-top: 1.25rem;
+    }
+    .card-3{
+        margin-bottom: 1.25rem;
+    }
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
